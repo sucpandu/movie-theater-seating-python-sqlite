@@ -2,13 +2,13 @@
 
 ## Introduction 
 
-Movie Theater Seating project allocates seats in a movie theater to incoming requests in an efficient way which maximizes theater profit as well as gives closely located seats made in a single request. 
+The system allocates seats in a movie theater to incoming requests in an efficient way which maximizes theater profit as well as gives closely located seats made in a single request. 
 In the current support it is capable of taking seat reservation request input from a text file and writes the seat reservation details to an output file. The seat configurations and other information related to the movie theater are fetched from a sqlite database. 
 After allocation, the reserved seats are updated against he reservation IDs in the database. However the design is flexible to take inputs and dispatch outputs to any source with code extension.
 
 ## Usage 
 
-Goto the directory containing movie-theater-seating project and run the commands below. 
+Go to the directory containing movie-theater-seating project and run the commands below. 
 This generates a reservation output file for seat reservation requests passed via the input file.
 
 ```
