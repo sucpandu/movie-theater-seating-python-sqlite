@@ -11,9 +11,9 @@ from dbutility import db_utility
 import pandas as pd
 
                                                                                                                 
-#  class read_res_request()                                                                                            #
-#     This class has function read() which reads the input text file and convert it into a pandas dataframe.       #
-#                                                                                                                     #
+#  class read_res_request()                                                                                            
+#     This class has function read() which reads the input text file and convert it into a pandas dataframe.       
+#                                                                                                                     
 
 class read_res_request(object):     
 
