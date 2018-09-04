@@ -46,6 +46,22 @@ mts suchethapanduranga$ python allocator.py movie_seating.db sample-input.txt sa
 2. Numpy array has been used to store the seat allocation information (i.e. Seat number and row number).
 3. Data structure such as lists and arrays have been used to store the values as per the requirement of the program.
 
+## Sample Seat Map after allocation
+
+```
+-----------------------Seat Matrix after reservations -----------------------
+['R001' 'R001' 'R001' 'R001' 'R001' 'R002' 'R002' 'R003' 'R003' 'R012']
+['R004' 'R004' 'R005' 'R005' 'R006' 'R006' 'R006' 'R008' 'R008' 'R008']
+['R007' 'R007' 'R007' 'R007' 'R009' 'R009' 'R010' 'R010' 'R017' 'R017']
+['R011' 'R011' 'R011' 'R013' 'R013' 'R013' 'R014' 'R014' 'R014' 'R026']
+['R015' 'R015' 'R015' 'R016' 'R016' 'R016' 'R018' 'R018' 'R018' 'R031']
+['R019' 'R019' 'R019' 'R019' 'R019' 'R020' 'R020' 'R021' 'R021' 'R035']
+['R022' 'R022' 'R023' 'R023' 'R024' 'R024' 'R024' 'R025' 'R025' 'R025']
+['R027' 'R027' 'R027' 'R027' 'R027' 'R027' 'R027' 'R027' 'R027' 'R035']
+['R028' 'R028' 'R029' 'R029' 'R030' 'R030' 'R032' 'R032' 'R032' 'R035']
+['R033' 'R033' 'R033' 'R033' 'R034' 'R034' 'R034' 'R034' 'R036' 'R041']
+```
+
 ## Discussion
 
 This project demonstrates the use of data structures, classes, unit testing and using database in python programming. 
