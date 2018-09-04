@@ -264,21 +264,24 @@ class test_total_seats(unittest.TestCase):
 
     def test_total_reservations(self):
         reserved_total_test = __main__(self.database, self.filename)
-        self.assertEqual(reserved_total_test, 5)
+        print (reserved_total_test)
+        self.assertEqual(reserved_total_test, 8)
         
         
     def test_seat_info(self):  
         row_id, cols, nrows = seat_info()
-        self.assertEqual(nrows,10, msg='reading incorrect seat row information')
-        self.assertEqual(cols, 10, msg='reading incorrect seat column information')
+        print (row_id, cols, nrows)
+        self.assertEqual(nrows,10)
+        self.assertEqual(cols, 10)
         
     def test_seat_allocate(self):
         reserved_seats_test = seat_allocator('R001', 2)
+        print (reserved_seats_test)
         self.assertEqual(len(reserved_seats_test), 2)
         self.assertEqual(reserved_seats_test[0], 'A1')
         self.assertEqual(reserved_seats_test[1], 'A2')
-        self.assertEqual(reserved_seats_test[2], 'A3')
-        self.assertEqual(reserved_seats_test[3], 'A4')   
+        #self.assertEqual(reserved_seats_test[2], 'A3')
+        #self.assertEqual(reserved_seats_test[3], 'A4')
         
 if __name__ == '__main__':
     try:
@@ -289,19 +292,20 @@ if __name__ == '__main__':
         
         __main__(database, infile)
         
+         
+        print("-------------------Testing Data-------------------")
+        suite = unittest.TestSuite()
+        suite.addTest(test_total_seats("test_total_reservations",database,'test-input.txt'))
+        suite.addTest(test_total_seats("test_seat_info",database,'test-input.txt'))
+        suite.addTest(test_total_seats("test_seat_allocate",database,'test-input.txt'))
+        unittest.TextTestRunner().run(suite)
+               
         print("-----------------------Seat Matrix after reservations -----------------------")
     
         for i in range(nrows):
             rows = seat_id[i]
             print (rows)
-            
-        print("-------------------Testing Data-------------------")
-        suite = unittest.TestSuite()
-        suite.addTest(test_total_seats("test_total_reservations",database,infile))
-        suite.addTest(test_total_seats("test_seat_info",database,infile))
-        suite.addTest(test_total_seats("test_seat_allocate", database,infile))
-        unittest.TextTestRunner().run(suite)
-               
+           
     except IndexError:
         print ('Please enter valid *.db, *.txt infile and outfile infiles')
         sys.exit()
