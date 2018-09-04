@@ -1,4 +1,3 @@
-# movie-theater-seating-python-sqlite3
 
 ## Introduction 
 
