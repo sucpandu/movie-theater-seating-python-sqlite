@@ -254,7 +254,7 @@ emp_seat_row = seat_tracker()
 
 #----- Test Suite for asserting the correctness of data -----#
     
-class test_total_seats(unittest.TestCase):
+"""class test_total_seats(unittest.TestCase):
 
     def __init__(self, testname, test_database, test_filename):
         super(test_total_seats, self).__init__(testname)
@@ -281,7 +281,7 @@ class test_total_seats(unittest.TestCase):
         self.assertEqual(reserved_seats_test[0], 'A1')
         self.assertEqual(reserved_seats_test[1], 'A2')
         #self.assertEqual(reserved_seats_test[2], 'A3')
-        #self.assertEqual(reserved_seats_test[3], 'A4')
+        #self.assertEqual(reserved_seats_test[3], 'A4')"""
         
 if __name__ == '__main__':
     try:
@@ -293,12 +293,12 @@ if __name__ == '__main__':
         __main__(database, infile)
         
          
-        print("-------------------Testing Data-------------------")
+        """print("-------------------Testing Data-------------------")
         suite = unittest.TestSuite()
         suite.addTest(test_total_seats("test_total_reservations",database,'test-input.txt'))
         suite.addTest(test_total_seats("test_seat_info",database,'test-input.txt'))
         suite.addTest(test_total_seats("test_seat_allocate",database,'test-input.txt'))
-        unittest.TextTestRunner().run(suite)
+        unittest.TextTestRunner().run(suite)"""
                
         print("-----------------------Seat Matrix after reservations -----------------------")
     
