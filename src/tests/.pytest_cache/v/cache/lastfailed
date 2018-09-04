@@ -1,0 +1,5 @@
+{
+  "allocator.py": true, 
+  "helpers.py::helpersTest::test_alphavalue_seats": true, 
+  "helpers.py::helpersTest::test_seat_info": true
+}
